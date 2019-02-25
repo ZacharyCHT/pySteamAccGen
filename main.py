@@ -7,6 +7,7 @@ import requests
 import json
 import webbrowser
 import string
+import time
 
 def randString(strLen):
     randString = []
@@ -61,8 +62,11 @@ def getEmails(inbox):
     return(emails)
     
 def verifyEmail(emails):
-    for msg in emails:
-        print(json.dumps(['sender'], indent=4,)+'\n')
+    if (emails != "null"):
+        for msg in emails:
+            print(json.dumps(['sender'], indent=4,)+'\n')
+    else:
+        print("No emails are in this inbox")
     
 def createAccount():
     with requests.Session() as session:
