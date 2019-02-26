@@ -1,6 +1,9 @@
 #Thanks to https://github.com/tax1driver for having https://github.com/tax1driver/steamaccgen/blob/master/app.js as a reference for me to look at
 #
 #
+#Abandoning this because I can't find an email service that steam doesn't ban and has an api
+#
+#
 import os
 import secrets
 import requests
